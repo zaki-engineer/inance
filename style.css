@@ -1,0 +1,336 @@
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: aqua;
+    margin-bottom: 50px;
+    padding: 0;
+}
+
+header {
+    background: lightblue;
+    height: 100vh;
+
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.header-content .header-box img {
+    width: 350px;
+}
+
+.header-content .header-box {
+    width: 500px;
+}
+
+.header-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-box p {
+    font-size: 24px;
+}
+
+.header-box h1 {
+    font-size: 54px;
+}
+
+.header-box a {
+    text-decoration: none;
+    background: blue;
+    color: white;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-box {
+    width: 500px;
+}
+
+.box-2 img {
+    width: 100%;
+}
+
+.about .about-box h1 {
+    font-size: 40px;
+}
+
+.about .about-box p {
+    font-size: 24px;
+}
+
+.about .about-box a {
+    padding: 10px 30px;
+    background: blue;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.moya {
+    display: flex;
+    justify-content: space-around;
+}
+
+.inst img {
+    width: 400px;
+}
+
+.moya h1 {
+    font-size: 40px;
+    color: black;
+}
+
+.moya p {
+    font-size: 24px;
+}
+
+.tea {
+    width: 500px;
+}
+
+.tea a {
+    background-color: blue;
+    text-decoration: none;
+    padding: 10px 30px;
+    color: white;
+}
+
+.tass h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.she img {
+    width: 100px;
+}
+
+.she h4 {
+    font-size: 30px;
+}
+
+.she p {
+    font-size: 20px;
+}
+
+.free img {
+    width: 100px;
+}
+
+.free h2 {
+    font-size: 30px;
+}
+
+.free p {
+    font-size: 20px;
+}
+
+.zak img {
+    width: 100px;
+}
+
+.zak h3 {
+    font-size: 30px;
+}
+
+.zak p {
+    font-size: 20px;
+}
+
+.tass {
+    display: flex;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time a {
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+}
+
+.repairs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.box {
+    background-color: blue;
+    width: 300px;
+    text-align: center;
+}
+
+.repairs .fa-solid {
+    font-size: 100px;
+}
+
+.clients {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.clients .client-box {
+    width: 500px;
+}
+
+.client-box div {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.client-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.client-box p {
+    font-size: 24px;
+}
+
+.Contact {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.contact-box {
+    width: 500px;
+}
+
+.contact-box form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contact-box form input,
+.contact-box textarea {
+    padding: 10px 30px;
+    border: 1px solid black;
+    outline: none;
+    width: 300px;
+}
+
+
+/* media queries  */
+@media(max-width:900px) {
+    header {
+        height: auto !important;
+    }
+
+    ul {
+        flex-direction: column;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        gap: 10px !important;
+    }
+
+    nav {
+        margin-bottom: 160px;
+    }
+
+    nav h1 {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+    .header-box{
+        width: 100% !important;
+    }
+    .repairs{
+        flex-direction: column;
+    }
+    .repairs .box{
+        width: 100% !important;
+    }
+    .about{
+        flex-direction: column;
+        height: auto !important;
+    }
+    .about .about-box, .tass-box{
+        width: 100% !important;
+        height: auto !important;
+    }
+    .about .h1{
+        position: absolute;
+    }
+    .moya{
+        flex-direction:column ;
+    }
+    .all{
+        flex-direction: column;
+    }
+    .all .tass{
+      flex-direction: column;  
+    }
+   .clients{
+    flex-direction: column;
+   }
+   .client-box{
+    width: 100% !important;
+
+   }
+   .Contact{
+    flex-direction: column;
+   }
+   .contact-box{
+    width: 100% !important;
+   }
+   iframe{
+    width: 100% !important;
+   }
+   .tea{
+    width: 100% !important;
+   }
+}
